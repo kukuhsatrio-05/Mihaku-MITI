@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodelaID - Belajar Coding Seru</title>
+    
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Kombinasi Font: Poppins (Heading) & Nunito (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Bar Atas -->
+    <header class="top-bar">
+        <div class="menu-toggle" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1 class="website-name">KodelaID</h1>
+    </header>
+
+    <div class="layout-container">
+        <!-- Menu Garis 3 (Sidebar) -->
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#" class="nav-link active" data-target="beranda">Beranda</a></li>
+                    <li><a href="#" class="nav-link" data-target="course">Learning Course</a></li>
+                    <li><a href="#" class="nav-link" data-target="membership">Membership</a></li>
+                    <li><a href="#" class="nav-link" data-target="profil">Profil Perusahaan</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Area Konten Utama -->
+        <main class="main-content">
+            
+            <!-- HALAMAN BERANDA -->
+            <section id="beranda" class="content-section active-section">
+                <!-- Area Background, Gradasi, dan Bintang -->
+                <div class="hero-container" id="star-container">
+                    <!-- Background gambar coding -->
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Coding Background" class="bg-image">
+                    
+                    <!-- Overlay gradasi dari gambar ke warna gelap -->
+                    <div class="gradient-overlay"></div>
+                    <!-- Bintang digenerate via JavaScript di dalam container ini -->
+                </div>
+
+                <!-- Area Deskripsi Website -->
+                <div class="description-box">
+                    <h2>Mulai Petualangan Kodingmu!</h2>
+                    <p>KodelaID merupakan website learning course untuk mempelajari bahasa coding dengan interaksi melalui kuis, game yang dapat dimainkan, dan beberapa buku pelajaran yang dirancang agar sangat mudah dipahami. Belajar koding kini terasa seperti bermain game!</p>
+                </div>
+            </section>
+
+            <!-- HALAMAN LEARNING COURSE -->
+            <section id="course" class="content-section">
+                <h2>Pilih Kelasmu</h2>
+                <div class="gamified-cards">
+                    <div class="card cpp-card">
+                        <h3>C++ Dasar</h3>
+                        <p>Pelajari logika dan algoritma dari nol.</p>
+                        <button class="btn-play">Mulai Kuis</button>
+                    </div>
+                    <div class="card sql-card">
+                        <h3>Master SQL</h3>
+                        <p>Kuasai manajemen database interaktif.</p>
+                        <button class="btn-play">Mulai Kuis</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HALAMAN MEMBERSHIP -->
+            <section id="membership" class="content-section">
+                <h2>Membership Premium</h2>
+                <div class="description-box">
+                    <p>Dapatkan akses lebih! Buka kunci semua modul premium, kuis tingkat lanjut, nyawa tak terbatas, dan bahan ajar eksklusif untuk mempercepat karir digitalmu.</p>
+                    <button class="btn-premium">Berlangganan Sekarang</button>
+                </div>
+            </section>
+
+            <!-- HALAMAN PROFIL PERUSAHAAN -->
+            <section id="profil" class="content-section">
+                <h2>Profil Mihaku Edutainment</h2>
+                <div class="description-box left-align">
+                    
+                    <h3 class="sub-title">Tujuan Perusahaan</h3>
+                    <p>Membangun dan mendidik masyarakat Indonesia menjadi individu yang modern, inovatif, dan melek digital, guna meningkatkan kualitas penguasaan teknologi dalam menghadapi tantangan era digitalisasi.</p>
+                    
+                    <h3 class="sub-title">Tentang Kami</h3>
+                    <p>Mihaku Edutainment merupakan perusahaan IT yang berfokus di bidang edukasi dan hiburan (edutainment). Kami percaya bahwa pendidikan teknologi tidak seharusnya kaku. Di sini, setiap orang dapat belajar pemrograman dan skill digital lainnya melalui interaksi yang menyenangkan, seru, dan tidak membosankan.</p>
+
+                    <h3 class="sub-title">Struktur Organisasi</h3>
+                    <ul class="structure-list">
+                        <li><strong>CEO:</strong> Thoriq</li>
+                        <li><strong>CTO:</strong> Lead System & Game Architect</li>
+                        <li><strong>Head of Education:</strong> Penyusun Kurikulum & Kuis</li>
+                        <li><strong>UI/UX Designer:</strong> Perancang Interaksi Gamifikasi</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
