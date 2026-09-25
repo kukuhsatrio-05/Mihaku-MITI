@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mihaku Edutaintment - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800;900&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigasi -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-accent">✦</span> MIHAKU
+          <span class="sub-brand">EDUTAINTMENT</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="#"
+                class="nav-btn active"
+                onclick="switchTab('home', event)"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-btn" onclick="switchTab('team', event)"
+                >Struktur Tim</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-btn" onclick="switchTab('roadmap', event)"
+                >Peta Jalan</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="#produk" class="btn-primary" onclick="switchTab('home', event)"
+          >Coba Aplikasi</a
+        >
+      </div>
+    </header>
+
+    <!-- SECTION 1: BERANDA -->
+    <main id="page-home" class="page-section active">
+      <!-- Hero Section dengan Interaktif ASCII Art -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="badge">Edukasi CS Standar Harvard</div>
+          <h1 class="hero-title">
+            Pendidikan Komputer Tingkat Dunia untuk Masa Depan.
+          </h1>
+          <p class="hero-desc">
+            Mihaku Edutaintment menghadirkan cara baru belajar ilmu komputer
+            melalui aplikasi interaktif, modul praktikum terstruktur, dan
+            evaluasi kuis real-time.
+          </p>
+          <div class="hero-actions">
+            <a href="#produk" class="btn-primary">Jelajahi Produk</a>
+            <button class="btn-secondary" onclick="switchTab('team', event)">
+              Kenali Tim Kami →
+            </button>
+          </div>
+        </div>
+
+        <!-- ASCII Art Canvas Container -->
+        <div class="ascii-container">
+          <canvas id="asciiCanvas"></canvas>
+          <div class="ascii-hint">
+            💡 Gerakkan kursor di atas efek ASCII untuk efek interaktif
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile & Visi Misi Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="section-label">TENTANG PERUSAHAAN</div>
+          <h2 class="section-title">
+            Menyetarakan Akses Pendidikan Teknologi Bertaraf Internasional
+          </h2>
+
+          <div class="grid-2">
+            <div class="card card-visi">
+              <div class="card-tag">VISI KAMI</div>
+              <h3>Menjadi Platform EdTech Terdepan</h3>
+              <p>
+                Menjadi platform teknologi edukasi terdepan dengan akses
+                pembelajaran ilmu komputer berkualitas tinggi berstandar global.
+              </p>
+            </div>
+            <div class="card card-misi">
+              <div class="card-tag">MISI KAMI</div>
+              <ul class="misi-list">
+                <li>
+                  <strong>Adaptasi Kurikulum:</strong> Menyajikan materi terkait
+                  keilmuan komputer yang diadaptasi secara aplikatif dan mudah
+                  dipahami.
+                </li>
+                <li>
+                  <strong>Pembelajaran Berbasis Praktik:</strong> Membangun
+                  aplikasi pembelajaran berbasis praktik dengan fitur evaluasi
+                  pemahaman yang terukur.
+                </li>
+                <li>
+                  <strong>Aksesibilitas Luas:</strong> Memperluas akses
+                  masyarakat terhadap literasi digital dan keterampilan dengan
+                  bidang keilmuan komputer secara fleksibel.
+                </li>
+              </ul>
+            </div>
+
+            <div class="card card-tujuan">
+              <div class="card-tag">TUJUAN PERUSAHAAN</div>
+              <ul class="misi-list">
+                <li>
+                  Meluncurkan aplikasi pembelajaran berbasis modul dan kuis
+                  interaktif yang stabil serta dapat diakses oleh publik secara
+                  luas.
+                </li>
+                <li>
+                  Membantu pengguna menguasai konsep dasar ilmu komputer hingga
+                  siap mengaplikasikannya dalam kebutuhan akademis maupun
+                  profesional.
+                </li>
+                <li>
+                  Membangun ekosistem belajar mandiri yang efisien dengan
+                  tingkat pemahaman terhadap ilmu komputer yang tinggi.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Showcase Hasil Produk Jadi (App UI Simulation) -->
+      <section id="produk" class="product-section">
+        <div class="container">
+          <div class="text-center margin-bottom-lg">
+            <div class="section-label">HASIL PRODUK JADI</div>
+            <h2 class="section-title">
+              Aplikasi Pembelajaran Interaktif Mihaku
+            </h2>
+            <p class="section-desc">
+              Pengalaman belajar ringkas, intuitif, dan adaptif langsung di
+              genggaman pengguna.
+            </p>
+          </div>
+
+          <!-- Showcase Phone Frame Mockup -->
+          <div class="phone-showcase-wrapper">
+            <!-- Phone Frame 1: Home Dashboard -->
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="app-header">
+                  <div class="user-profile">
+                    <div class="user-avatar">JW</div>
+                    <div>
+                      <div class="user-name">John Wilson</div>
+                      <div class="user-role">Frontend Developer</div>
+                    </div>
+                  </div>
+                  <div class="user-rating">★ 4.9</div>
+                </div>
+
+                <div class="app-section-title">My courses</div>
+                <div class="course-card course-green-light">
+                  <div class="course-header">
+                    <span class="course-title">English Vocabulary (Full)</span>
+                    <span class="dots">•••</span>
+                  </div>
+                  <div class="progress-info">35 / 210 lessons</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 20%"></div>
+                  </div>
+                </div>
+
+                <div class="course-card course-teal">
+                  <div class="course-header">
+                    <span class="course-title">Python CS Fundamentals</span>
+                    <span class="dots">•••</span>
+                  </div>
+                  <div class="progress-info">472 / 730 lessons</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%"></div>
+                  </div>
+                </div>
+
+                <div class="app-section-title">Today's lessons</div>
+                <div class="grid-2-app">
+                  <div class="mini-card mini-yellow">
+                    <div class="mini-num">36.</div>
+                    <div class="mini-title">The Present Perfect</div>
+                    <div class="mini-time">1h 20min</div>
+                    <div class="mini-arrow">→</div>
+                  </div>
+                  <div class="mini-card mini-teal">
+                    <div class="mini-num">473.</div>
+                    <div class="mini-title">Advanced CS Topics</div>
+                    <div class="mini-time">1h 20min</div>
+                    <div class="mini-arrow">→</div>
+                  </div>
+                </div>
+
+                <div class="app-bottom-nav">
+                  <span>🏠</span>
+                  <span>🔍</span>
+                  <div class="app-add-btn">+</div>
+                  <span>🔔</span>
+                  <span>👤</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Frame 2: Syllabus & Quiz -->
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="app-nav-top">
+                  <span>←</span>
+                  <span>🔗</span>
+                </div>
+
+                <div class="hero-course-card">
+                  <div class="hero-course-title">LEARN<br />PYTHON</div>
+                  <div class="hero-course-icon">🐍</div>
+                  <div class="hero-course-progress">472 / 730 lessons</div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      style="width: 65%; background: #ffffff"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="app-tabs">
+                  <span>Overview</span>
+                  <span class="active">Syllabus</span>
+                  <span>Lessons</span>
+                  <span>Quiz</span>
+                </div>
+
+                <div class="syllabus-list">
+                  <div class="syllabus-item completed">
+                    <div class="check-icon">✓</div>
+                    <div class="syllabus-info">
+                      <div class="syllabus-name">1. Python Syntax & Basics</div>
+                      <div class="syllabus-time">1h 30min</div>
+                    </div>
+                    <div class="item-arrow">→</div>
+                  </div>
+
+                  <div class="syllabus-item completed">
+                    <div class="check-icon">✓</div>
+                    <div class="syllabus-info">
+                      <div class="syllabus-name">
+                        2. Console Output & Variables
+                      </div>
+                      <div class="syllabus-time">1h 20min</div>
+                    </div>
+                    <div class="item-arrow">→</div>
+                  </div>
+
+                  <div class="syllabus-item in-progress">
+                    <div class="check-icon">⏳</div>
+                    <div class="syllabus-info">
+                      <div class="syllabus-name">
+                        3. Conditionals & Flow Control
+                      </div>
+                      <div class="syllabus-time">2h 10min</div>
+                    </div>
+                    <div class="item-arrow">→</div>
+                  </div>
+
+                  <div class="syllabus-item active-green">
+                    <div class="check-icon">○</div>
+                    <div class="syllabus-info">
+                      <div class="syllabus-name">4. Functions & CS Modules</div>
+                      <div class="syllabus-time">1h 50min</div>
+                    </div>
+                    <div class="item-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION 2: STRUKTUR TIM -->
+    <main id="page-team" class="page-section">
+      <div class="container">
+        <div class="text-center margin-bottom-lg">
+          <div class="section-label">TIM KAMI</div>
+          <h2 class="section-title">Struktur Organisasi Ramping (4 Anggota)</h2>
+          <p class="section-desc">
+            Setiap anggota memegang peran kunci untuk akselerasi pertumbuhan
+            startup.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">👨‍💼</div>
+            <div class="team-role">Chief Executive & Product Lead</div>
+            <h3 class="team-name">Kukuh Satrio Buditomo</h3>
+            <p class="team-bio">
+              Penanggung jawab strategi arah perusahaan, kemitraan kurikulum,
+              dan merancang alur pengalaman pengguna (UX) platform.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">💻</div>
+            <div class="team-role">Lead Software Engineer</div>
+            <h3 class="team-name">Arya Agung Dharma Wisesa</h3>
+            <p class="team-bio">
+              Memimpin arsitektur aplikasi mobile, integrasi kuis interaktif,
+              serta performa sistem backend & server.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">📚</div>
+            <div class="team-role">Curriculum & Content Specialist</div>
+            <h3 class="team-name">Abdallah Ilham Zamzami</h3>
+            <p class="team-bio">
+              Menyarikan materi CS dari Harvard CSEdu menjadi modul pembelajaran
+              ringkas, mudah dipahami, dan relevan.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">🚀</div>
+            <div class="team-role">Marketing & Growth Lead</div>
+            <h3 class="team-name">Muhammad Hafiz Paherti</h3>
+            <p class="team-bio">
+              Mengelola branding, strategi akuisisi pengguna awal, riset pasar,
+              dan publikasi portofolio perusahaan ke publik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- SECTION 3: PETA JALAN (ROADMAP) -->
+    <main id="page-roadmap" class="page-section">
+      <div class="container">
+        <div class="text-center margin-bottom-lg">
+          <div class="section-label">RENCANA PERUMUSAN</div>
+          <h2 class="section-title">Peta Jalan Pengembangan Mihaku</h2>
+          <p class="section-desc">
+            Langkah strategis dari tahap peluncuran awal hingga ekspansi materi
+            lanjutan.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <div class="roadmap-item">
+            <div class="roadmap-number">01</div>
+            <div class="roadmap-content">
+              <h3>Fase 1: Minimum Viable Product (MVP)</h3>
+              <p>
+                Fokus pada penyempurnaan aplikasi pembelajaran berbasis modul
+                adaptasi Harvard CSEdu (Python & Dasar CS) serta kuis evaluasi
+                interaktif.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-number">02</div>
+            <div class="roadmap-content">
+              <h3>Fase 2: Publikasi Portofolio & Beta Testing</h3>
+              <p>
+                Meluncurkan website portofolio ke publik dan mengundang 500
+                pengguna pertama untuk menguji keterlibatan modul dan kuis.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-number">03</div>
+            <div class="roadmap-content">
+              <h3>Fase 3: Ekspansi Modul Pembelajaran</h3>
+              <p>
+                Mengembangkan kurikulum tambahan diluar materi dasar Harvard,
+                seperti Web Development, Data Science, dan Algorithm Design.
+              </p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-number">04</div>
+            <div class="roadmap-content">
+              <h3>Fase 4: Kemitraan Strategis & Ekosistem</h3>
+              <p>
+                Membuka jalur sertifikasi dan bekerja sama dengan institusi
+                pendidikan serta komunitas teknologi lokal di Indonesia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <span class="logo-accent">✦</span> MIHAKU EDUTAINTMENT
+        </div>
+        <p>© 2026 Mihaku Edutaintment. Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
